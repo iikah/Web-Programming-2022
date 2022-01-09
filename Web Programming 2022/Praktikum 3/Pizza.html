@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+</head>
+<body style="background-color: bisque;">
+    <h3><b>Black Goose Bistro | Pizza-on-Demand</b></h3>
+    <div>
+        Our 12" wood-fired pizzas are available for delivery.
+        <br> Build your custom pizza and we'll deliver it within an hour.
+    </div>
+    <br>
+    <div>
+        Your Information
+        <form method="POST" action="Pizza.html">
+            Name:
+            <input type="text" name="username">
+            <br> Address:
+            <input type="text" name="address">
+            <br> Telephone Number:
+            <input type="text" name="telephone">
+            <br> Email:
+            <input type="text" name="email">
+            <br> Delivery instructions:
+            <br> <textarea name="instructions" cols="40" rows="3" maxlenght="400" placeholder="no more than 400 characters long"></textarea>
+        </form>
+    </div>
+    <br>
+    <div> <b>Design Your Dream Pizza</b>
+    <br>Pizza specs
+    <br>
+    <p>Crust (Choose one): </p>
+    <ol>
+        <li><input type="radio" name="crust" value="Classic White">Classic White</li>
+        <li><input type="radio" name="crust" value="Multigrain">Multigrain</li>
+        <li><input type="radio" name="crust" value="Cheese-stuffed crust">Cheese-stuffed</li>
+        <li><input type="radio" name="crust" value="Gluten-free">Gluten-free</li>
+    </ol>
+    <p></p>
+    <p>Toppings (Choose as many as you want): </p>
+    <ol>
+        <li><input type="checkbox" name="toppings" value="Red sauce" checked>Red sauce</li>
+        <li><input type="checkbox" name="toppings" value="White sauce">White sauce</li>
+        <li><input type="checkbox" name="toppings" value="Mozzarella Cheese">Mozzarella Cheese</li>
+        <li><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</li>
+        <li><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</li>
+        <li><input type="checkbox" name="toppings" value="Peppers">Peppers</li>
+        <li><input type="checkbox" name="toppings" value="Anchovies">Anchovies</li>
+    </ol>
+    <p></p>
+    <p>Number</p>
+    <p>How many pizzas: <input type="text" list="number" name="number"> <datalist id="number"> <option value="1"></option><option value="2"></option><option value="3"></option><option value="4"></option><option value="5"></option><option value="6"></option></datalist></p>
+    </div>
+</body>
+</html>
